@@ -16,12 +16,14 @@ Author: [Alexis Lasselin](https://github.com/AlexisLasselin)
     - [3. Related Documents](#3-related-documents)
     - [4. Terms/Acronyms and Definitions](#4-termsacronyms-and-definitions)
     - [5. Risk and Assumptions](#5-risk-and-assumptions)
+    - [6. Stakeholders](#6-stakeholders)
 
 </details>
 
 ---
 
 ## Project Team
+
 |**Member**|**Role**|
 |:---|:---|
 |[Salaheddine Namir](https://github.com/T3rryc)| Project manager |
@@ -71,8 +73,17 @@ There are the requirements for the software:
 
 | **Risk** | **Impact** | **Mitigation** |
 |:---|:---|:---|
-| The software is not finished on time | The client will not be able to use the software and will have to do the blending manually | We will have to work more to finish the software on time |
-| The software is not working | The client will not be able to use the software and will have to do the blending manually | We will have to work more to fix the bugs |
-| The software is not user friendly | The client will not be able to use the software and will have to do the blending manually | We will have to work more to solve this problem |
-| The formula is not close to the final result | The client will not be able to use the software and will have to do the blending manually | We will have to redefine our calculations |
+| The software is not finished on time | The client will not be able to use the software and will have to do the blending manually | Make a critical path, respect it and also deploy a good project management |
+| The software is not working | The client will not be able to use the software and will have to do the blending manually | Our QA and our SE will need to work together to find and solve all problems users will be able to meet |
+| The software is not user friendly | If the software is not user-friendly, use it will be hard and a waste of time to understand it | Write instructions and make them clearer as possible |
+| The formula is not close to the final result | The champagne's flavors will not be those who are expected | We will have to redefine our calculations |
 | The result is letting some tank partially empty | Champagne will be lost | We will have to redefine our calculations |
+
+### 6. Stakeholders
+
+| **Stakeholder** | **Role** | **Presentations** |
+|:---|:---|:---|
+| ALGOSUP | Project owner | The school who is in charge of the project |
+| Krug Client | Client | The client who order the software |
+| Julie Cavil | Krug Cellar Master | The person who will use the software |
+| Team 4 | Project team | The team who will build the software (see [Project Team](#project-team)) |
