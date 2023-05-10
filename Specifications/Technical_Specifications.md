@@ -51,9 +51,17 @@ In the dynamic array we will store an array of size 2 with :
 - The quantity of this wine in the tank
 
 
+## Program
 
+Wow much equation, such math
 
+Basicaly :
 
+For loop to see which tanks are full, and sort them by formulae.
+Calculate the total volume of combining two formulae
+Find wich cobinaison of container can hold the total volume
+Split into the corect proportion
+Repeat
 
 
 
