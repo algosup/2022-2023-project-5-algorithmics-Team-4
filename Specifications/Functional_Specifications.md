@@ -19,7 +19,11 @@ Author: [Alexis Lasselin](https://github.com/AlexisLasselin)
     - [6. Risk and Assumptions](#6-risk-and-assumptions)
   - [II. System Overview](#ii-system-overview)
     - [1. Diagrams](#1-diagrams)
-    - [2. System Actors](#2-system-actors)
+    - [2. System Actors and Personas](#2-system-actors-and-personas)
+      - [A. Stakeholders](#a-stakeholders)
+      - [B. Personas](#b-personas)
+        - [Persona 1](#persona-1)
+        - [Persona 2](#persona-2)
     - [3. Dependencies and Change Impacts](#3-dependencies-and-change-impacts)
 
 </details>
@@ -95,7 +99,9 @@ This document will be used by the project team to build the software. It will be
 
 <!-- TODO: Add diagrams -->
 
-### 2. System Actors
+### 2. System Actors and Personas
+
+#### A. Stakeholders
 
 | **Stakeholder** | **Role** | **Presentations** |
 |:---|:---|:---|
@@ -103,5 +109,30 @@ This document will be used by the project team to build the software. It will be
 | Krug Client | Client | The client who order the software |
 | Julie Cavil | Krug Cellar Master | The person who will use the software |
 | Team 4 | Project team | The team who will build the software (see [Project Team](#project-team)) |
+
+#### B. Personas
+
+##### Persona 1
+
+```text
+Name: Pierre Dupont
+Age: 35
+Job: Winemaker 
+Location: Reims, France
+
+Presentation: Pierre is the owner of 4 domains in Champagne, he's currently preparing the blending of his champagne. 
+This year, the harvest was very good and he has a lot of high quality grapes, he wants to make a champagne with a lot of character.
+He's looking for a software who can help him to mass produce magnums of champagne with the correct proportions, taking stocks and the different tanks he has into account.
+```
+
+##### Persona 2
+
+```text
+Name: Marc Martin
+Age: 42
+Job: Cellar Master
+
+Presentation: Marc is the cellar master of a big champagne house, he's currently preparing the blending of the Best Seller of the house. He has the perfect formula to make the best champagne possible, but he has a lot of tanks and he doesn't want to do the calculations by hand. He's looking for a software who can help him to mass produce bottles of champagne with the correct proportions, taking stocks and the different tanks he has into account.
+```
 
 ### 3. Dependencies and Change Impacts
