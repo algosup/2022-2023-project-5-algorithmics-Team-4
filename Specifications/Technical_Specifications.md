@@ -53,17 +53,19 @@ In the dynamic array we will store an array of size 2 with :
 
 ## Program
 
-Wow much equation, such math
+The program can be broken down into five looping steps.
+- Checking and sorting full tanks acording to their content
+- Select two wines to combine and calculate their volume
+- Find one or several tanks that can store the combined volume
+- For each target tanks calculate the volumes of each wines acording to the formula proportion
+- Update the tanks Array with the new quantities
 
-Basicaly :
+Repeat those step until their is only wine formula at the end which should be the expected formula
+Finaly we can print the instruction detailing wich transfer we did
 
-For loop to see which tanks are full, and sort them by formulae.
-Calculate the total volume of combining two formulae
-Find wich cobinaison of container can hold the total volume
-Split into the corect proportion
-Repeat
+## Finding cobinaison of containers
 
-
+We have situation resembling the water pouring puzzle
 
 
 
