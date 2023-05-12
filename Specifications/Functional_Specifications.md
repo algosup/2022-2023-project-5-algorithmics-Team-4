@@ -13,10 +13,14 @@ Author: [Alexis Lasselin](https://github.com/AlexisLasselin)
   - [I. Introduction](#i-introduction)
     - [1. Purpose of the document](#1-purpose-of-the-document)
     - [2. Project Scope](#2-project-scope)
-    - [3. Related Documents](#3-related-documents)
-    - [4. Terms/Acronyms and Definitions](#4-termsacronyms-and-definitions)
-    - [5. Risk and Assumptions](#5-risk-and-assumptions)
-    - [6. Stakeholders](#6-stakeholders)
+    - [3. Scope of the Document](#3-scope-of-the-document)
+    - [4. Related Documents](#4-related-documents)
+    - [5. Terms/Acronyms and Definitions](#5-termsacronyms-and-definitions)
+    - [6. Risk and Assumptions](#6-risk-and-assumptions)
+  - [II. System Overview](#ii-system-overview)
+    - [1. Diagrams](#1-diagrams)
+    - [2. System Actors](#2-system-actors)
+    - [3. Dependencies and Change Impacts](#3-dependencies-and-change-impacts)
 
 </details>
 
@@ -55,13 +59,17 @@ There are the requirements for the software:
 - [ ] The result must be find with the minimum number of steps possible
 - [ ] The code's execution time must be the fastest possible
 
-### 3. Related Documents
+### 3. Scope of the Document
+
+This document will be used by the project team to build the software. It will be used as a reference for the project team to ensure that the software is built to the specifications outlined in this document. This document will also be used by the project team to ensure that the software is built to the specifications outlined in this document.
+
+### 4. Related Documents
 
 | **Document** | **Description** |
 |:---|:---|
 | [Technical Specifications](Technical_Specifications.md) | This document provides detailed information on how the system solution will be built. |
 
-### 4. Terms/Acronyms and Definitions
+### 5. Terms/Acronyms and Definitions
 
 | **Term** | **Acronym(if applicable)** | **Definition** |
 |:---|:---|:---|
@@ -69,7 +77,7 @@ There are the requirements for the software:
 | Krug Grande Cuvée | | The flagship of the House, the Grande Cuvée is the archetype of Krug’s philosophy of craftsmanship and savoir faire: a blend of more than 120 wines from ten or more different years. |
 | Tank | | A large receptacle or storage chamber, especially for liquid or gas. |
 
-### 5. Risk and Assumptions
+### 6. Risk and Assumptions
 
 | **Risk** | **Impact** | **Mitigation** |
 |:---|:---|:---|
@@ -79,7 +87,15 @@ There are the requirements for the software:
 | The formula is not close to the final result | The champagne's flavors will not be those who are expected | We will have to redefine our calculations |
 | The result is letting some tank partially empty | Champagne will be lost | We will have to redefine our calculations |
 
-### 6. Stakeholders
+## II. System Overview
+
+<!-- TODO -->
+
+### 1. Diagrams
+
+<!-- TODO: Add diagrams -->
+
+### 2. System Actors
 
 | **Stakeholder** | **Role** | **Presentations** |
 |:---|:---|:---|
@@ -87,3 +103,5 @@ There are the requirements for the software:
 | Krug Client | Client | The client who order the software |
 | Julie Cavil | Krug Cellar Master | The person who will use the software |
 | Team 4 | Project team | The team who will build the software (see [Project Team](#project-team)) |
+
+### 3. Dependencies and Change Impacts
