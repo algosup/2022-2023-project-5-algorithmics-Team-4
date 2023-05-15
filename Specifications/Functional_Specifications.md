@@ -24,7 +24,6 @@ Author: [Alexis Lasselin](https://github.com/AlexisLasselin)
       - [B. Personas](#b-personas)
         - [Persona 1](#persona-1)
         - [Persona 2](#persona-2)
-    - [3. Dependencies and Change Impacts](#3-dependencies-and-change-impacts)
 
 </details>
 
@@ -134,5 +133,3 @@ Job: Cellar Master
 
 Presentation: Marc is the cellar master of a big champagne house, he's currently preparing the blending of the Best Seller of the house. He has the perfect formula to make the best champagne possible, but he has a lot of tanks and he doesn't want to do the calculations by hand. He's looking for a software who can help him to mass produce bottles of champagne with the correct proportions, taking stocks and the different tanks he has into account.
 ```
-
-### 3. Dependencies and Change Impacts
