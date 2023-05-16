@@ -18,8 +18,7 @@ Author: [Alexis Lasselin](https://github.com/AlexisLasselin)
     - [5. Terms/Acronyms and Definitions](#5-termsacronyms-and-definitions)
     - [6. Risk and Assumptions](#6-risk-and-assumptions)
   - [II. System Overview](#ii-system-overview)
-    - [1. Diagrams](#1-diagrams)
-    - [2. System Actors and Personas](#2-system-actors-and-personas)
+    - [1. System Actors and Personas](#1-system-actors-and-personas)
       - [A. Stakeholders](#a-stakeholders)
       - [B. Personas](#b-personas)
         - [Persona 1](#persona-1)
@@ -94,11 +93,7 @@ This document will be used by the project team to build the software. It will be
 
 <!-- TODO -->
 
-### 1. Diagrams
-
-<!-- TODO: Add diagrams -->
-
-### 2. System Actors and Personas
+### 1. System Actors and Personas
 
 #### A. Stakeholders
 
