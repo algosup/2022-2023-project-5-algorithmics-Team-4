@@ -23,6 +23,18 @@ Author: [Alexis Lasselin](https://github.com/AlexisLasselin)
       - [B. Personas](#b-personas)
         - [Persona 1](#persona-1)
         - [Persona 2](#persona-2)
+    - [2. Dependencies and Change Impacts](#2-dependencies-and-change-impacts)
+  - [III. System Configuration](#iii-system-configuration)
+  - [IV. Other System Requirements / Non-Functional Requirements](#iv-other-system-requirements--non-functional-requirements)
+  - [V. Reporting Requirements](#v-reporting-requirements)
+  - [VI. Integration Requirements](#vi-integration-requirements)
+    - [1. Exception Handling / Error Reporting](#1-exception-handling--error-reporting)
+  - [VII. Data Migration / Conversion Requirements](#vii-data-migration--conversion-requirements)
+    - [1. Data Conversion Strategy](#1-data-conversion-strategy)
+    - [2. Data Conversion Preparation](#2-data-conversion-preparation)
+    - [3. Data Conversion Specifications](#3-data-conversion-specifications)
+  - [VIII. References](#viii-references)
+  - [IX. Open Issues](#ix-open-issues)
 
 </details>
 
@@ -100,6 +112,7 @@ This document will be used by the project team to build the software. It will be
 | **Stakeholder** | **Role** | **Presentations** |
 |:---|:---|:---|
 | ALGOSUP | Project owner | The school who is in charge of the project |
+| Franck Jeannin | ALGOSUP CEO | The person who is the contact between the client and the school |
 | Krug Client | Client | The client who order the software |
 | Julie Cavil | Krug Cellar Master | The person who will use the software |
 | Team 4 | Project team | The team who will build the software (see [Project Team](#project-team)) |
@@ -128,3 +141,27 @@ Job: Cellar Master
 
 Presentation: Marc is the cellar master of a big champagne house, he's currently preparing the blending of the Best Seller of the house. He has the perfect formula to make the best champagne possible, but he has a lot of tanks and he doesn't want to do the calculations by hand. He's looking for a software who can help him to mass produce bottles of champagne with the correct proportions, taking stocks and the different tanks he has into account.
 ```
+
+### 2. Dependencies and Change Impacts
+
+## III. System Configuration
+
+## IV. Other System Requirements / Non-Functional Requirements
+
+## V. Reporting Requirements
+
+## VI. Integration Requirements
+
+### 1. Exception Handling / Error Reporting
+
+## VII. Data Migration / Conversion Requirements
+
+### 1. Data Conversion Strategy
+
+### 2. Data Conversion Preparation
+
+### 3. Data Conversion Specifications
+
+## VIII. References
+
+## IX. Open Issues
