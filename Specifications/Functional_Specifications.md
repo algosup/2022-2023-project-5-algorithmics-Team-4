@@ -135,4 +135,29 @@ He's looking for a software who can help him to mass produce bottles of champagn
 
 ### 2. Use Cases
 
-<!-- TODO -->
+To be able to use the software, the user will have to follow these steps:
+
+1. Give a .csv file with the stocks of the different tanks;
+2. Give the formula of the champagne;
+3. The software will calculate the correct proportions of champagne to blend;
+4. The software will give the result in a .csv file.
+5. The user will be able to use the result to blend the champagne.
+
+The software will be able to be used by the cellar master of a champagne house or by a winemaker.
+
+Here is an example of a .csv file with the stocks of the different tanks:
+
+```csv
+Tank 1; Pinot Noir; 2563;
+Tank 2; Pinot Meunier; 283;
+Tank 3; Chardonnay; 5000;
+Tank 4; Empty; 1000;
+```
+
+Here is an example of a formula:
+
+```text
+Pinot Noir: 50%
+Pinot Meunier: 30%
+Chardonnay: 20%
+```
