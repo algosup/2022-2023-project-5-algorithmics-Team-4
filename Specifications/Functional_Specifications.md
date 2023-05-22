@@ -158,7 +158,7 @@ Tank 6;;5000
 Tank 7;Chardonnay;8000
 ```
 
-Here is an example of a formula:
+Here is an example of an input formula of the champagne where, for each  grape variety, we have the perfect percentage of the grape variety in the final blend:
 
 ```text
 Pinot Noir: 56%
