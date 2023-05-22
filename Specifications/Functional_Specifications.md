@@ -148,16 +148,22 @@ The software will be able to be used by the cellar master of a champagne house o
 Here is an example of a .csv file with the stocks of the different tanks:
 
 ```csv
-Tank 1; Pinot Noir; 2563;
-Tank 2; Pinot Meunier; 283;
-Tank 3; Chardonnay; 5000;
-Tank 4; Empty; 1000;
+Tank Name;Grape Variety;Capacity (in liters)
+Tank 1;Chardonnay;5000
+Tank 2;Pinot Noir;7500
+Tank 3;Chardonnay;10000
+Tank 4;;2000
+Tank 5;Pinot Meunier;3000
+Tank 6;;5000
+Tank 7;Chardonnay;8000
 ```
 
 Here is an example of a formula:
 
 ```text
-Pinot Noir: 50%
-Pinot Meunier: 30%
-Chardonnay: 20%
+Pinot Noir: 56%
+Pinot Meunier: 41%
+Chardonnay: 3%
 ```
+
+<!-- TODO: The result presentation -->
