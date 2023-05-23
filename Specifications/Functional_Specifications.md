@@ -15,8 +15,7 @@ Author: [Alexis Lasselin](https://github.com/AlexisLasselin)
     - [2. Project Scope](#2-project-scope)
     - [3. Scope of the Document](#3-scope-of-the-document)
     - [4. Related Documents](#4-related-documents)
-    - [5. Terms/Acronyms and Definitions](#5-termsacronyms-and-definitions)
-    - [6. Risk and Assumptions](#6-risk-and-assumptions)
+    - [5. Risk and Assumptions](#5-risk-and-assumptions)
   - [II. System Overview](#ii-system-overview)
     - [1. System Actors and Personas](#1-system-actors-and-personas)
       - [A. Stakeholders](#a-stakeholders)
@@ -24,6 +23,7 @@ Author: [Alexis Lasselin](https://github.com/AlexisLasselin)
         - [Persona 1](#persona-1)
         - [Persona 2](#persona-2)
     - [2. Use Cases](#2-use-cases)
+  - [III. Terms/Acronyms and Definitions](#iii-termsacronyms-and-definitions)
 
 </details>
 
@@ -72,21 +72,13 @@ This document will be used by the project team to build the software. It will be
 |:---|:---|
 | [Technical Specifications](Technical_Specifications.md) | This document provides detailed information on how the system solution will be built. |
 
-### 5. Terms/Acronyms and Definitions
-
-| **Term** | **Acronym(if applicable)** | **Definition** |
-|:---|:---|:---|
-| Champagne | | Sparkling wine produced from grapes grown in the Champagne region of France following rules that demand secondary fermentation of the wine in the bottle to create carbonation. |
-| Krug Grande Cuvée | | The flagship of the House, the Grande Cuvée is the archetype of Krug’s philosophy of craftsmanship and savoir faire: a blend of more than 120 wines from ten or more different years. |
-| Tank | | A large receptacle or storage chamber, especially for liquid or gas. |
-
-### 6. Risk and Assumptions
+### 5. Risk and Assumptions
 
 | **Risk** | **Impact** | **Mitigation** |
 |:---|:---|:---|
 | The software is not finished on time | The client will not be able to use the software and will have to do the blending manually | Make a critical path, respect it and also deploy a good project management |
 | The software is not working | The client will not be able to use the software and will have to do the blending manually | Our QA and our SE will need to work together to find and solve all problems users will be able to meet |
-| The software is not user friendly | If the software is not user-friendly, use it will be hard and a waste of time to understand it | Write instructions and make them clearer as possible |
+| The software is not user friendly | If the software is not user-friendly, using it will be hard and a waste of time to understand it | Write instructions and make them clearer as possible |
 | The formula is not close to the final result | The champagne's flavors will not be those who are expected | We will have to redefine our calculations |
 | The result is letting some tank partially empty | Champagne will be lost | We will have to redefine our calculations |
 
@@ -167,3 +159,11 @@ Chardonnay: 3%
 ```
 
 <!-- TODO: The result presentation -->
+
+## III. Terms/Acronyms and Definitions
+
+| **Term** | **Acronym(if applicable)** | **Definition** |
+|:---|:---|:---|
+| Champagne | | Sparkling wine produced from grapes grown in the Champagne region of France following rules that demand secondary fermentation of the wine in the bottle to create carbonation. |
+| Krug Grande Cuvée | | The flagship of the House, the Grande Cuvée is the archetype of Krug’s philosophy of craftsmanship and savoir faire: a blend of more than 120 wines from ten or more different years. |
+| Tank | | A large receptacle or storage chamber, especially for liquid or gas. |
