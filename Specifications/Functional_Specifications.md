@@ -41,7 +41,7 @@ Author: [Alexis Lasselin](https://github.com/AlexisLasselin)
 
 ## I. Introduction
 
-The main objective of this project is to build a software who determine the quantities of champagne in the correct proportions for the blending of the Krug Grande Cuvée. Our client for this project is the Champagne House Krug.
+The main objective of this project is to build software that determines the quantities of champagne in the correct proportions for the blending of the Krug Grande Cuvée. Our client for this project is the Champagne House, Krug.
 
 ### 1. Purpose of the document
 
@@ -51,20 +51,20 @@ This document will be updated as needed throughout the project to reflect any ch
 ### 2. Project Scope
 
 The main feature of this software is the following:
-Depending of pre-entered quantities and with a formula, the software will calculate the correct proportions of Champagne to blend in order to obtain the Krug Grande Cuvée.
+Depending on pre-entered quantities and with a formula, the software will calculate the correct proportions of Champagne to blend to obtain the Krug Grande Cuvée.
 
 There are the requirements for the software:
 
-- [ ] No crash and bugs
-- [ ] We must not have half empty tanks, oxidation will make the champagne unusable
+- [ ] No crashes and bugs
+- [ ] We must not have half-empty tanks because of oxidation that will make the the remaining liquid unusable
 - [ ] The final result must be the closest possible to the formula
-- [ ] The code must be commented and in an idiomatic style to be easily readable
-- [ ] The result must be find with the minimum number of steps possible
+- [ ] The code must be commented on and in an idiomatic style to be easily readable
+- [ ] The result must be given with the minimum number of steps possible
 - [ ] The code's execution time must be the fastest possible
 
 ### 3. Scope of the Document
 
-This document will be used by the project team to build the software. It will be used as a reference for the project team to ensure that the software is built to the specifications outlined in this document. This document will also be used by the project team to ensure that the software is built to the specifications outlined in this document.
+This document will be used by the project team to build the software. It will be used as a reference for the project team to ensure that the software is built to the specifications outlined in this document.
 
 ### 4. Related Documents
 
@@ -76,10 +76,10 @@ This document will be used by the project team to build the software. It will be
 
 | **Risk** | **Impact** | **Mitigation** |
 |:---|:---|:---|
-| The software is not finished on time | The client will not be able to use the software and will have to do the blending manually | Make a critical path, respect it and also deploy a good project management |
+| The software is not finished on time | The client will not be able to use the software and will have to do the blending manually | Make a critical path, respect it, and also deploy good project management |
 | The software is not working | The client will not be able to use the software and will have to do the blending manually | Our QA and our SE will need to work together to find and solve all problems users will be able to meet |
-| The software is not user friendly | If the software is not user-friendly, using it will be hard and a waste of time to understand it | Write instructions and make them clearer as possible |
-| The formula is not close to the final result | The champagne's flavors will not be those who are expected | We will have to redefine our calculations |
+| The software is not user-friendly | If the software is not user-friendly, using it will be hard and a waste of time to understand it | Write instructions and make them clearer as possible |
+| The formula is not close to the final result | The champagne's flavors will not be those that are expected | We will have to redefine our calculations |
 | The result is letting some tank partially empty | Champagne will be lost | We will have to redefine our calculations |
 
 ## II. System Overview
@@ -109,8 +109,8 @@ Job: Winemaker
 Location: Reims, France
 
 Presentation: Pierre is the owner of 4 domains in Champagne, he's currently preparing the blending of his champagne. 
-This year, the harvest was very good and he has a lot of high quality grapes, he wants to make a champagne with a lot of character.
-He's looking for a software who can help him to mass produce magnums of champagne with the correct proportions, taking stocks and the different tanks he has into account.
+This year, the harvest was very good and he has a lot of high-quality grapes, he wants to make a champagne with a lot of character.
+He's looking for software that can help him to mass produce magnums of champagne with the correct proportions, taking stocks and the different tanks he has into account.
 ```
 
 ##### Persona 2
@@ -122,7 +122,7 @@ Job: Cellar Master
 
 Presentation: Marc is the cellar master of a big champagne house, he's currently preparing the blending of the Best Seller of the house. 
 He has the perfect formula to make the best champagne possible, but he has a lot of tanks and he doesn't want to do the calculations by hand. 
-He's looking for a software who can help him to mass produce bottles of champagne with the correct proportions, taking stocks and the different tanks he has into account.
+He's looking for software that can help him to mass produce bottles of champagne with the correct proportions, taking stocks and the different tanks he has into account.
 ```
 
 ### 2. Use Cases
@@ -164,6 +164,6 @@ Chardonnay: 3%
 
 | **Term** | **Acronym(if applicable)** | **Definition** |
 |:---|:---|:---|
-| Champagne | | Sparkling wine produced from grapes grown in the Champagne region of France following rules that demand secondary fermentation of the wine in the bottle to create carbonation. |
-| Krug Grande Cuvée | | The flagship of the House, the Grande Cuvée is the archetype of Krug’s philosophy of craftsmanship and savoir faire: a blend of more than 120 wines from ten or more different years. |
+  | Champagne | | Sparkling wine produced from grapes grown in the Champagne region of France following rules that demand secondary fermentation of the wine in the bottle to create carbonation. |
+| Krug Grande Cuvée | | The flagship of the House, the Grande Cuvée is the archetype of Krug’s philosophy of craftsmanship and savoir-faire: a blend of more than 120 wines from ten or more different years. |
 | Tank | | A large receptacle or storage chamber, especially for liquid or gas. |
