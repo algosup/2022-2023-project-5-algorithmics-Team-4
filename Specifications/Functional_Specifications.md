@@ -21,7 +21,10 @@ Author: [Alexis Lasselin](https://github.com/AlexisLasselin)
         - [Persona 1 - Pierre Dupont](#persona-1---pierre-dupont)
         - [Persona 2 - Marc Martin](#persona-2---marc-martin)
         - [Persona 3 - Jean Dupont](#persona-3---jean-dupont)
+        - [Persona 4 - Marc Sautier](#persona-4---marc-sautier)
     - [2. Use Cases](#2-use-cases)
+    - [3. Technical Terms](#3-technical-terms)
+      - [A. Steps](#a-steps)
   - [III. Terms/Acronyms and Definitions](#iii-termsacronyms-and-definitions)
 
 </details>
@@ -51,9 +54,9 @@ There are the requirements for the software:
 
 - [ ] No crashes and bugs
 - [ ] We must not have half-empty tanks because of oxidation that will make the the remaining liquid unusable
-- [ ] The final result must be the closest possible to the formula
+- [ ] The final result must be the closest possible to the formula, to the tenth
 - [ ] The code must be commented on and in an idiomatic style to be easily readable
-- [ ] The result must be given with the minimum number of steps possible
+- [ ] The result must be given with the minimum number of steps possible (Steps are defined in [the technical terms](#3-technical-terms)
 - [ ] The code's execution time must be as fast as possible!
 
 ### 2. Related Documents
@@ -70,7 +73,7 @@ There are the requirements for the software:
 | The software is not working | The client will not be able to use the software and will have to do the calculation manually | Our QA and our SE will need to work together to find and solve all problems users will be able to meet |
 | The software is not user-friendly | If the software is not user-friendly, using it will be hard and a waste of time to understand it | Write instructions and make them clearer as possible |
 | The software is not efficient | The champagne's flavors will not be those that are expected or the result is letting some tank partially empty| We will have to redefine our calculations |
-| The software is not fast enough | The client will have to wait a long time to get the result | We will have to optimize our code |
+| The software is not fast enough | The client will have to wait a long time to get the result | We must ask to the client if he prefer efficiency or speed |
 
 ## II. System Overview
 
@@ -115,11 +118,19 @@ He's looking for software that can help him to mass produce bottles of champagne
 
 Name: Jean Dupont
 Age: 25
-Job: Student
+Job: Work-study student
 
 Presentation: Jean is a student in oenology, he's currently preparing his thesis on the blending of champagne.
 He has the perfect formula for his brother's champagne, but there are a lot of tanks and he doesn't want to do the calculations by hand because he doesn't have the time.
 He's looking for an efficient software that can help him to confirm his thesis.
+
+##### Persona 4 - Marc Sautier
+
+Name: Marc Sautier
+Age: 15
+Job: Student (Trainee in middle school)
+
+Presentation: Marc is a student in middle school, and one of his tasks is to help the cellar master to blend the champagne, precisely to make the count of the stocks for the calculation of the blending. He's not very good at math and he made some mistakes. The cellar master is not happy and he's looking for a software that can help him to do the calculation.
 
 ### 2. Use Cases
 
@@ -136,14 +147,14 @@ The software will be able to be used by the cellar master of a champagne house o
 Here is an example of a .csv file with the stocks of the different tanks:
 
 ```csv
-Tank Name;Wine name;Capacity
-Tank 1;A;5000
-Tank 2;B;7500
-Tank 3;A;10000
-Tank 4;;2000
-Tank 5;C;3000
-Tank 6;;5000
-Tank 7;A;8000
+Tank Name,Wine name,Capacity
+Tank 1,A,5000
+Tank 2,B,7500
+Tank 3,A,10000
+Tank 4, ,2000
+Tank 5,C,3000
+Tank 6, ,5000
+Tank 7,A,8000
 ```
 
 Here is an example of an input formula of the champagne where, for each wine, the user define the percentage of the wine in the final blend, to the tenth.
@@ -165,6 +176,18 @@ Step 3: 10000L of A from Tank 3 to tank 1
 Step 4: 2000L of A from Tank 4 to tank 3
 etc...
 ```
+
+### 3. Technical Terms
+
+#### A. Steps
+
+A step is moving wine from 1-5 tanks into 1-5 tanks (5 is a maximum, realistically you are only going to do 2-3 at a time). A step is defined by:
+
+- The wine name;
+- The quantity of wine to move;
+- The tank from which the wine is taken;
+- The tank in which the wine is put.
+- The number of the step.
 
 ## III. Terms/Acronyms and Definitions
 
