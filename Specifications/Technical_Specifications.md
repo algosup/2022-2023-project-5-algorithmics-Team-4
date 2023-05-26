@@ -65,7 +65,8 @@ Finaly we can print the instruction detailing wich transfer we did
 
 ## Finding cobinaison of containers
 
-We have situation resembling the water pouring puzzle
+We will do a Combination sum problem. to reduce processing time we will only tanks that are smaller than the target or less than 5% larger. We will also do a random selection to cut the number in half.
+
 
 
 
