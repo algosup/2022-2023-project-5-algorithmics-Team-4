@@ -1,0 +1,15 @@
+C:\Users\SalaheddineNAMIR\source\repos\ConsoleAppBlend\ConsoleAppBlend\bin\Debug\net6.0\ConsoleAppBlend.exe
+C:\Users\SalaheddineNAMIR\source\repos\ConsoleAppBlend\ConsoleAppBlend\bin\Debug\net6.0\ConsoleAppBlend.deps.json
+C:\Users\SalaheddineNAMIR\source\repos\ConsoleAppBlend\ConsoleAppBlend\bin\Debug\net6.0\ConsoleAppBlend.runtimeconfig.json
+C:\Users\SalaheddineNAMIR\source\repos\ConsoleAppBlend\ConsoleAppBlend\bin\Debug\net6.0\ConsoleAppBlend.dll
+C:\Users\SalaheddineNAMIR\source\repos\ConsoleAppBlend\ConsoleAppBlend\bin\Debug\net6.0\ConsoleAppBlend.pdb
+C:\Users\SalaheddineNAMIR\source\repos\ConsoleAppBlend\ConsoleAppBlend\obj\Debug\net6.0\ConsoleAppBlend.csproj.AssemblyReference.cache
+C:\Users\SalaheddineNAMIR\source\repos\ConsoleAppBlend\ConsoleAppBlend\obj\Debug\net6.0\ConsoleAppBlend.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\SalaheddineNAMIR\source\repos\ConsoleAppBlend\ConsoleAppBlend\obj\Debug\net6.0\ConsoleAppBlend.AssemblyInfoInputs.cache
+C:\Users\SalaheddineNAMIR\source\repos\ConsoleAppBlend\ConsoleAppBlend\obj\Debug\net6.0\ConsoleAppBlend.AssemblyInfo.cs
+C:\Users\SalaheddineNAMIR\source\repos\ConsoleAppBlend\ConsoleAppBlend\obj\Debug\net6.0\ConsoleAppBlend.csproj.CoreCompileInputs.cache
+C:\Users\SalaheddineNAMIR\source\repos\ConsoleAppBlend\ConsoleAppBlend\obj\Debug\net6.0\ConsoleAppBlend.dll
+C:\Users\SalaheddineNAMIR\source\repos\ConsoleAppBlend\ConsoleAppBlend\obj\Debug\net6.0\refint\ConsoleAppBlend.dll
+C:\Users\SalaheddineNAMIR\source\repos\ConsoleAppBlend\ConsoleAppBlend\obj\Debug\net6.0\ConsoleAppBlend.pdb
+C:\Users\SalaheddineNAMIR\source\repos\ConsoleAppBlend\ConsoleAppBlend\obj\Debug\net6.0\ConsoleAppBlend.genruntimeconfig.cache
+C:\Users\SalaheddineNAMIR\source\repos\ConsoleAppBlend\ConsoleAppBlend\obj\Debug\net6.0\ref\ConsoleAppBlend.dll

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ConsoleAppBlend/1.0.0": {
+        "runtime": {
+          "ConsoleAppBlend.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ConsoleAppBlend/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
