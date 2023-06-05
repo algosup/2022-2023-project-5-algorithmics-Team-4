@@ -28,6 +28,11 @@ Author: [Alexis Lasselin](https://github.com/AlexisLasselin)
     - [4. Precisions](#4-precisions)
       - [A. Errors](#a-errors)
       - [B. Warnings](#b-warnings)
+      - [C. Bonus information](#c-bonus-information)
+    - [5. Constraints](#5-constraints)
+      - [A. Hardware](#a-hardware)
+      - [B. Software](#b-software)
+      - [C. Time](#c-time)
   - [III. Terms/Acronyms and Definitions](#iii-termsacronyms-and-definitions)
 
 </details>
@@ -201,6 +206,24 @@ If there is an error in the formula (sum different from 100%), the software will
 #### B. Warnings
 
 If there is a warning in the .csv file (No liquid or no tank), the software will return an warning message: "There is a warning in the .csv file, be sure that there is no empty tank or no empty liquid".
+
+#### C. Bonus information
+
+The percentage of any ingredient in the final blend must be an integer or a decimal number to the tenth.
+
+### 5. Constraints
+
+#### A. Hardware
+
+The software will be used on a computer with an operating system (Windows, Linux, Mac OS).
+
+#### B. Software
+
+The software will be needed to be able to read a .csv file and to write a .txt file.
+
+#### C. Time
+
+The software will be needed to be able to calculate the correct proportions of champagne to blend in less than 1 minute.
 
 ## III. Terms/Acronyms and Definitions
 
