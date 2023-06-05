@@ -25,6 +25,9 @@ Author: [Alexis Lasselin](https://github.com/AlexisLasselin)
     - [2. Use Cases](#2-use-cases)
     - [3. Technical Terms](#3-technical-terms)
       - [A. Steps](#a-steps)
+    - [4. Precisions](#4-precisions)
+      - [A. Errors](#a-errors)
+      - [B. Warnings](#b-warnings)
   - [III. Terms/Acronyms and Definitions](#iii-termsacronyms-and-definitions)
 
 </details>
@@ -188,6 +191,16 @@ A step is moving wine from 1-5 tanks into 1-5 tanks (5 is a maximum, realistical
 - The tank from which the wine is taken;
 - The tank in which the wine is put.
 - The number of the step.
+
+### 4. Precisions
+
+#### A. Errors
+
+If there is an error in the formula (sum different from 100%), the software will return an warning message: "The sum of the percentages is not equal to 100%".
+
+#### B. Warnings
+
+If there is a warning in the .csv file (No liquid or no tank), the software will return an warning message: "There is a warning in the .csv file, be sure that there is no empty tank or no empty liquid".
 
 ## III. Terms/Acronyms and Definitions
 
