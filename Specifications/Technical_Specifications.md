@@ -67,6 +67,10 @@ Finaly we can print the instruction detailing wich transfer we did
 
 We will do a Combination sum problem. to reduce processing time we will only tanks that are smaller than the target or less than 5% larger. We will also do a random selection to cut the number in half.
 
+## Getting the data
+
+We will get the data from a CSV using a parser. The Tanks will be empty by default exept the one initialized with some wine in them.
+
 
 
 
