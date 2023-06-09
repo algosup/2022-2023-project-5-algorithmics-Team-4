@@ -97,12 +97,12 @@ namespace ConsoleAppBlend
         }
 
         // Set the wine tanks with their capacity, quantity and variety 
-        public static void SetWineTanks(int n, int q, string v)
+        public static void SetWineTanks(int n, int q, string v, double r)
         {
             Console.WriteLine("SetWineTanks");
             for (int i = 0; i < n; i++)
             {
-                WineTank tank = new WineTank { capacity = q, quantity = q, variety = v, ratio = 0.0 };
+                WineTank tank = new WineTank { capacity = q, quantity = q, variety = v, ratio = r };
                 wineTanks.Add(tank);
 
 
@@ -128,7 +128,7 @@ namespace ConsoleAppBlend
 
         }
 
-        public static void SetRatio(double r, string v)
+       /* public static void SetRatio(double r, string v)
         {
             Console.WriteLine("SetRatio");
             foreach (WineTank WineTank in wineTanks)
@@ -150,7 +150,7 @@ namespace ConsoleAppBlend
                 Console.WriteLine("ratio of N°" + trig + " WineTank: " + wineTank.ratio);
             }
             Console.WriteLine("///////////////////////////");
-        }
+        }*/
 
         public static void Blend()
         {
