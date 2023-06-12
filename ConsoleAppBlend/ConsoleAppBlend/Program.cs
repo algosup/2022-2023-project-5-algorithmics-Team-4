@@ -12,16 +12,17 @@ namespace ConsoleAppBlend
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.Green;
             // MeasureExecutionTime(() => Blender.Blending());
-            MeasureExecutionTime(() => WineBlending.SetBlendingTanks(200, 200));
-            MeasureExecutionTime(() => WineBlending.SetWineTanks(100, 200, "A"));
-            MeasureExecutionTime(() => WineBlending.SetRatio(0.5, "A"));
-            MeasureExecutionTime(() => WineBlending.SetWineTanks(300, 300, "B"));
-            MeasureExecutionTime(() => WineBlending.SetWineTanks(500, 300, "B"));
-            MeasureExecutionTime(() => WineBlending.SetRatio(0.2, "B"));
-            MeasureExecutionTime(() => WineBlending.SetWineTanks(200, 300, "C"));
-            MeasureExecutionTime(() => WineBlending.SetRatio(0.3, "C"));
+            MeasureExecutionTime(() => WineBlending.SetBlendingTanks(100, 200));
+            MeasureExecutionTime(() => WineBlending.SetWineTanks(100, 200, "A", 0.5));
+           /* MeasureExecutionTime(() => WineBlending.SetRatio(0.5, "A"));*/
+            MeasureExecutionTime(() => WineBlending.SetWineTanks(100, 300, "B",0.3));
+           
+           /* MeasureExecutionTime(() => WineBlending.SetRatio(0.2, "B"));*/
+            MeasureExecutionTime(() => WineBlending.SetWineTanks(100, 300, "C", 0.2));
+           /* MeasureExecutionTime(() => WineBlending.SetRatio(0.3, "C"));*/
             MeasureExecutionTime(() => WineBlending.Blend());
             MeasureExecutionTime(() => WineBlending.Save());
+            
 
 
         }
