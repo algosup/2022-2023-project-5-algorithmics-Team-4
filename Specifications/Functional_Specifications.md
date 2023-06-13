@@ -144,7 +144,7 @@ Presentation: Marc is a student in middle school, and one of his tasks is to hel
 
 To be able to use the software, the user will have to follow these steps:
 
-1. Give a .csv file with the stocks of the different tanks;
+1. Create a file named ``wine.csv`` that contains the stocks of the different tanks;
 2. Give the formula of the champagne;
 3. The software will calculate the correct proportions of champagne to blend;
 4. The software will give the result in a .txt file.
@@ -152,7 +152,7 @@ To be able to use the software, the user will have to follow these steps:
 
 The software will be able to be used by the cellar master of a champagne house or by a winemaker.
 
-Here is an example of a .csv file with the stocks of the different tanks:
+Here is an example of ``wine.csv`` file that the user will have to create:
 
 ```csv
 Tank Name,Wine name,Capacity
@@ -165,23 +165,23 @@ Tank 6, ,5000
 Tank 7,A,8000
 ```
 
-Here is an example of an input formula of the champagne where, for each wine, the user define the percentage of the wine in the final blend, to the tenth.
+To enter the formula, the user will have to enter percentages of each wine, for example:
 
 ```text
-B: 56%
-C: 40,2%
-A: 3,8%
+Entrez le pourcentage pour le vin A: 25
+Entrez le pourcentage pour le vin B: 25
+Entrez le pourcentage pour le vin C: 50
 ```
 
-If there is an error in the formula (sum different from 100%), the software will return an warning message.
+If there is an error in the formula (sum different from 100%), the software will return an warning message that will explain the error before asking the user to enter the formula again.
 
 Here is an example of an output file:
 
 ```text
-Step 1: 5000L of A from Tank 1 to tank 4
-Step 2: 7500L of B from Tank 2 to tank 4
-Step 3: 10000L of A from Tank 3 to tank 1
-Step 4: 2000L of A from Tank 4 to tank 3
+Step 1: 50hL of A from Tank 1 to tank 4
+Step 2: 75hL of B from Tank 2 to tank 4
+Step 3: 100hL of A from Tank 3 to tank 1
+Step 4: 20hL of A from Tank 4 to tank 3
 etc...
 ```
 
@@ -202,6 +202,7 @@ A step is moving wine from 1-5 tanks into 1-5 tanks (5 is a maximum, realistical
 #### A. Errors
 
 If there is an error in the formula (sum different from 100%), the software will return an warning message: "The sum of the percentages is not equal to 100%".
+If there is an error in the formula (percentage upper than 100% or negative), the software will return an warning message: "The percentage of a wine can't be upper than 100% or negative".
 
 #### B. Warnings
 
