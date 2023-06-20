@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppBlend
 {
-    class BlendingTank
+    public class BlendingTank
     {
         internal string variety;
         internal double ratio;
@@ -18,7 +18,7 @@ namespace ConsoleAppBlend
 
 
     }
-    class WineTank
+    public class WineTank
     {
         public int capacity { get; set; }
 
