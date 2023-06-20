@@ -1,75 +1,65 @@
-# Technical Specifications
+# Technical Specification
 
-## Structuring data
+## Deliverable
 
-We need to represent the wine tanks. This needs to be fast to access and to write. We will be using the folowing representation.
+An application outputing a step by step guide to blend wines into a target formula. The aplication should aim to have as few step as possible
 
-<table>
-   <tbody>
-      <tr>
-        <td>Int *(Tank Volume)*</td>
-      </tr>
-      <tr>
-         <td>
-           <table>
-             <tbody>
-               <tr>
-                 <td>
-                   Hex *(Wine ID)*
-                 </td>
-                 <td>
-                   Hex *(Wine ID)*
-                 </td>
-               </tr>
-               <tr>
-                 <td>
-                   Int *(Wine Volume)*
-                 </td>
-                 <td>
-                   Int *(Wine Volume)*
-                 </td>
-               </tr>
-             </tbody>
-           </table>
-        </td>
-      </tr>
-      <tr>
-         <td>Bool *(Empty of Full)*</td>
-      </tr>
-   </tbody>
-</table>
+## Requirements and Constrain
 
-- An Array of size ``n``, with ``n`` being the number of tanks 
+- Priority on reducing step over acuracy
+- Priority on acuracy over reducing waste
+- 5% inacuracy margin for each wines in the final formula
+- Size and number of tanks defined by user
+- Target formulae defined by user
+- Output steps to target formula
+- Tanks are either full or empty
+- No more than 5 conexions to 1 tank or vice versa, per steps
 
-In each meber of the array will be an array of size 3 storing :
-- The tank volume
-- The status (full or empty) as a bool for faste read
-- A dynamic array
+## Technical Architecture
 
-In the dynamic array we will store an array of size 2 with :
-- An identifier for the wine (probably in Hex)
-- The quantity of this wine in the tank
+### Technology
+
+- C# Fast, Feature Rich, Member alredy trained
+- .NET 6 Needed for c#, Long term suport, Nuget Packages
+- Console App
+
+### Input
+
+Files can be created in Exel and be exported to CSV.
+
+- Tanks.csv List all the tanks, their volumes and their content at the start of the process
+- Formula.csv Describe the proportion of each wines in the target formula. total should addup  to 1.
+
+*example :*<br>
+
+Tanks.csv
+```
+100, ''
+20, 'water'
+200, 'water'
+15, 'grenadine'
+30, ''
+```
+Formula.csv
+```
+0.8, 'water'
+0.2, 'grenadine'
+```
 
 
-## Program
 
-The program can be broken down into five looping steps.
-- Checking and sorting full tanks acording to their content
-- Select two wines to combine and calculate their volume
-- Find one or several tanks that can store the combined volume
-- For each target tanks calculate the volumes of each wines acording to the formula proportion
-- Update the tanks Array with the new quantities
 
-Repeat those step until their is only wine formula at the end which should be the expected formula
-Finaly we can print the instruction detailing wich transfer we did
 
-## Finding cobinaison of containers
 
-We will do a Combination sum problem. to reduce processing time we will only tanks that are smaller than the target or less than 5% larger. We will also do a random selection to cut the number in half.
 
-## Getting the data
 
-We will get the data from a CSV using a parser. The Tanks will be empty by default exept the one initialized with some wine in them.
+
+
+
+
+
+
+
 
 
 
