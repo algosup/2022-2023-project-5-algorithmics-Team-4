@@ -22,8 +22,9 @@ An application outputing a step by step guide to blend wines into a target formu
 
 - GUI
 - Previous use of tanks
+- Configurable option (eg. acuracy margin)
 
-## Technical Architecture
+## Technical Architecture and Choices
 
 ### Technology
 
@@ -67,9 +68,14 @@ F, D, G to A
 Target formula in A
 ```
 
+### Assumptions
 
+- It doesn't matter what the specified wine amounts add up to
+- Wine can be removed from the system
+- Wine canot be added to the system
+- the optimal result may be impossible to find
 
-
+### Algorithms 
 
 
 
