@@ -75,7 +75,47 @@ Target formula in A
 - Wine canot be added to the system
 - the optimal result may be impossible to find
 
-### Algorithms 
+## Algorithms 
+
+We will use a greedy algorithm that looks for the transfere that get us the closest to the target every time.<br>
+A number of posiblity can be dismissed from consideration by the algorithm :
+
+- tanks that are alredy full
+- tanks that are larger than the sum of the transfere
+- to futher improve execution time we could remove tanks at random at the cost of acuracy
+
+*acknowledgement*<br>
+This might not give the optimal result but it is hope that it will reduce processing time to a more managable number. <br>
+An improved version could look several step ahead.
+
+## Program
+
+### Class
+
+**Input :**
+- Target formula
+- List of all Tanks
+
+**Tank :** *describe one tank*
+- identifier
+- volume
+- Array of ratio of contained wine
+- Array contained wines
+
+**Formula :** *hold the target formula*
+- Array of ratio
+- Array of wines
+
+## Development Steps
+
+- Make some unit test
+- Make a prototype to comply with the test
+- Make an algorithm taking the 1st valid mix
+- Make the greedy algorithm
+- Check the limit of the Algorithm (larger imput size) and benchmark
+- Expand test case to find issues
+
+
 
 
 
