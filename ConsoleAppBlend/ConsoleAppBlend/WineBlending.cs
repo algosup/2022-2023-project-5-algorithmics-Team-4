@@ -83,7 +83,7 @@ namespace ConsoleAppBlend
         {
             var posiblity = Posibility.BuildPoibility(Tanks);
 
-            foreach (var posibility in A)
+            foreach (var posibility in posiblity)
             {
                 foreach (var a in posibility)
                 {
