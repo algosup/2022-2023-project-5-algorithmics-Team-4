@@ -2,6 +2,7 @@ using NUnit.Framework;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using ConsoleAppBlend;
 
 namespace ConsoleAppBlend.Tests
 {
@@ -9,10 +10,10 @@ namespace ConsoleAppBlend.Tests
     public class BlenderTests
     {
         [Test]
-        public void Test_Initialisation_BlendingTank()
+        public void Test_Initialisation_Empty_Tank()
         {
             var c = 500;
-            BlendingTank tank = new BlendingTank { capacity = c, quantity = 0 };
+            Tank tank = new Tank { capacity = c, quantity = 0 };
 
 
             // Vérifier que la capacité du réservoir est correcte
@@ -23,13 +24,13 @@ namespace ConsoleAppBlend.Tests
         }
 
         [Test]
-        public void Test_Initialisation_WineTank()
+        public void Test_Initialisation_Full_Tank()
         {
             var c = 500;
             var q = 100;
-            var v = "A";
-            var r = 0.5;
-            WineTank tank = new WineTank { capacity = c, quantity = q, variety = v, ratio = r };
+            string[] v = { "A" };
+            double[] r = { 0.5 };
+            Tank tank = new Tank { capacity = c, quantity = q, varieties = v, ratios = r };
 
             // Vérifier que la capacité du réservoir est correcte
             Assert.AreEqual(500, tank.capacity);
@@ -38,10 +39,10 @@ namespace ConsoleAppBlend.Tests
             Assert.AreEqual(100, tank.quantity);
 
             // Vérifier que le nom du réservoir est correct
-            Assert.AreEqual("A", tank.variety);
+            Assert.AreEqual(v, tank.varieties);
 
             // Vérifier que le ratio du réservoir est correct
-            Assert.AreEqual(0.5, tank.ratio);
+            Assert.AreEqual(r, tank.ratios);
         }
     }
 }

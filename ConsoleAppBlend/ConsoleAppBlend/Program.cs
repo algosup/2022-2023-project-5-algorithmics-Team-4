@@ -4,28 +4,25 @@ using System.Linq;
 
 namespace ConsoleAppBlend
 {
-   
     class Program
     {
         static void Main(string[] args)
         {
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.Green;
-            // MeasureExecutionTime(() => Blender.Blending());
-            MeasureExecutionTime(() => WineBlending.SetBlendingTanks(100, 200));
-            MeasureExecutionTime(() => WineBlending.SetWineTanks(100, 200, "A", 0.5));
-           /* MeasureExecutionTime(() => WineBlending.SetRatio(0.5, "A"));*/
-            MeasureExecutionTime(() => WineBlending.SetWineTanks(100, 300, "B",0.3));
-           
-           /* MeasureExecutionTime(() => WineBlending.SetRatio(0.2, "B"));*/
-            MeasureExecutionTime(() => WineBlending.SetWineTanks(100, 300, "C", 0.2));
-           /* MeasureExecutionTime(() => WineBlending.SetRatio(0.3, "C"));*/
+            MeasureExecutionTime(() => WineBlending.SetTanks(1, 100));
+            MeasureExecutionTime(() => WineBlending.SetTanks(1, 80, "A"));
+            MeasureExecutionTime(() => WineBlending.SetTanks(1, 20, "B"));
+
+            string[] varieties = { "A", "B" };
+            double[] ratios = { 0.8, 0.2 };
+
+            MeasureExecutionTime(() => WineBlending.SetFormula(varieties, ratios));
+
             MeasureExecutionTime(() => WineBlending.Blend());
             MeasureExecutionTime(() => WineBlending.Save());
-            
-
-
         }
+
         static void MeasureExecutionTime(Action action)
         {
             Stopwatch stopwatch = new Stopwatch();
@@ -35,7 +32,5 @@ namespace ConsoleAppBlend
             Console.WriteLine("Execution time: " + stopwatch.ElapsedMilliseconds + " ms");
             Console.WriteLine();
         }
-
     }
-
 }
