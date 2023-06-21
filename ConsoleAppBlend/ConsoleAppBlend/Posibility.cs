@@ -8,7 +8,7 @@ namespace ConsoleAppBlend
 {
     public static class Posibility
     {
-        // Find all the posible combinason of transfere
+        // Find all the posible combinason of transferes
         public static List<Tank[]> BuildPoibility(List<Tank> Tanks)
         {
             List<Tank[]> PoibilityList = new List<Tank[]>();
@@ -17,7 +17,7 @@ namespace ConsoleAppBlend
             Tank[] tankArr = full.ToArray();
             foreach (Tank tank in Tanks)
             {
-                if (tank.varieties.Contains("") && tank.ratios[0] == 1)
+                if (tank.ratios[0] == 1)
                 {
                     var sol = CombinationSum(tankArr, tank.capacity);
                     foreach (IList<Tank> list in sol)
@@ -39,7 +39,7 @@ namespace ConsoleAppBlend
 
             foreach (Tank tank in Tanks)
             {
-                if (!(tank.varieties.Contains("") && tank.ratios[0] == 1))
+                if (tank.ratios[0] != 1)
                 {
                     List.Add(tank);
                 }

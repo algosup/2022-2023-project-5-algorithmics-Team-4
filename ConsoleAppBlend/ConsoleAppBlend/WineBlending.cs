@@ -37,8 +37,19 @@ namespace ConsoleAppBlend
         public static void SetTanks(int number, int capacity, string variety = "", double ratio = 1, bool debug = false)
         {
             //need to be converted to array
-            string[] varietyArr = { variety };
-            double[] ratioArr = { ratio };
+            double[] ratioArr = Enumerable.Repeat(0.0, Formula.ratios.Length + 1).ToArray();
+
+            ratioArr[0] = ratio;
+            for (int i = 0; i < ratioArr.Length - 1; i++) {
+                if (Formula.varieties[i] == variety)
+                {
+                    ratioArr[i + 1] = ratio;
+                    ratioArr[0] = 0;
+                    break;
+                }
+            }
+
+            string[] varietyArr = Formula.varieties.ToList().Prepend("").ToArray();
 
             for (int i = 0; i < number; i++)
             {
@@ -49,14 +60,12 @@ namespace ConsoleAppBlend
             if (debug)
             {
                 // for debug
-                var trig = 0;
                 foreach (Tank Tank in Tanks)
                 {
-                    trig++;
-                    Console.WriteLine("quantity of N°" + trig + " Tank: " + Tank.quantity);
-                    Console.WriteLine("capacity of N°" + trig + " Tank: " + Tank.capacity);
-                    Console.WriteLine("variety of N°" + trig + " Tank: " + Tank.varieties);
-                    Console.WriteLine("ratio of N°" + trig + " Tank: " + Tank.ratios);
+                    Console.WriteLine("quantity of N°" + Tank.id + " Tank: " + Tank.quantity);
+                    Console.WriteLine("capacity of N°" + Tank.id + " Tank: " + Tank.capacity);
+                    Console.WriteLine("variety of N°" + Tank.id + " Tank: " + Tank.varieties[0]);
+                    Console.WriteLine("ratio of N°" + Tank.id + " Tank: " + Tank.ratios[0]);
                 }
 
                 Console.WriteLine("///////////////////////////");
