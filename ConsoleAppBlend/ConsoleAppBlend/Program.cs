@@ -20,7 +20,6 @@ namespace ConsoleAppBlend
             MeasureExecutionTime(() => WineBlending.SetFormula(varieties, ratios));
 
             MeasureExecutionTime(() => WineBlending.Blend());
-            MeasureExecutionTime(() => WineBlending.Save());
         }
 
         static void MeasureExecutionTime(Action action)

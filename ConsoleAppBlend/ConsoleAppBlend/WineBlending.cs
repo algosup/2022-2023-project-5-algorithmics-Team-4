@@ -81,16 +81,17 @@ namespace ConsoleAppBlend
         // New blend method
         public static void Blend()
         {
-            foreach (Tank tank in Tanks)
+            var posiblity = Posibility.BuildPoibility(Tanks);
+
+            foreach (var posibility in A)
             {
-
+                foreach (var a in posibility)
+                {
+                    Console.Write(a.id);
+                }
+                Console.WriteLine();
             }
-        }
-
-        // New save method
-        public static void Save()
-        {
-
+            Console.ReadLine();
         }
     }
 }
