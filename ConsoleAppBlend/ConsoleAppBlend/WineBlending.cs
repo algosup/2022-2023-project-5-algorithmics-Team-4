@@ -15,8 +15,6 @@ namespace ConsoleAppBlend
         public int capacity { get; set; }
 
         public int quantity { get; set; }
-
-
     }
     public class WineTank
     {
