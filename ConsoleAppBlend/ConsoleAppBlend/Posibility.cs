@@ -8,7 +8,7 @@ namespace ConsoleAppBlend
 {
     public static class Posibility
     {
-        // Find all the posible combinason of transferes
+        // Find all the possible combinations of transfers
         public static (List<Tank[]>, List<Tank>) BuildPoibility(List<Tank> Tanks)
         {
             List<Tank[]> PoibilityList = new List<Tank[]>();

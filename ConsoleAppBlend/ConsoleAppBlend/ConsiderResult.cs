@@ -9,7 +9,7 @@ namespace ConsoleAppBlend
     public static class ConsiderResult
     {
         public static double Consider(Tank[] Tanks, FormulaClass Formula) {
-            //Need to add the empty to the formula to make it as long as the Tank
+            // Need to add the empty to the formula to make it as long as the Tank
             double[] FormulaPrepend = Formula.ratios.ToList().Prepend(0).ToArray();
 
             return CalculateEuclideanDistance(CalculateResult(Tanks), FormulaPrepend);

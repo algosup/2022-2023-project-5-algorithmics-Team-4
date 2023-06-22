@@ -8,36 +8,36 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppBlend
 {
-    // describe a tank
+    // Describe a tank
     public class Tank
     {
-        public int capacity { get; set; } //How much wine can the tank hold
-        public int quantity { get; set; } //How much does it hold curently (for transfere stage)
-        public string[]? varieties { get; set; } //Names of the wines curently in the tanks
-        public double[]? ratios { get; set; } //Curent ratio of the wines in the tanks
-        public int id { get; set; } //unique tank identifier
+        public int capacity { get; set; } // How much wine can the tank hold
+        public int quantity { get; set; } // How much does it hold currently (for transfer stage)
+        public string[]? varieties { get; set; } // Names of the wines currently in the tanks
+        public double[]? ratios { get; set; } // Current ratio of the wines in the tanks
+        public int id { get; set; } // Unique tank identifier
     }
 
     // describe the target formula
     public class FormulaClass
     {
-        public string[]? varieties { get; set; } //Names of the wines
-        public double[]? ratios { get; set; } //Ratio of the wines
+        public string[]? varieties { get; set; } // Names of the wines
+        public double[]? ratios { get; set; } // Ratio of the wines
     }
 
     public class WineBlending
     {
         // Set the blending tanks with their capacity
-        // Blending are initialy empty tanks
+        // Blending are initially empty tanks
         static List<Tank> Tanks = new List<Tank>();
         static FormulaClass Formula = new FormulaClass();
         static Double BestAccuracy = 1;
 
         // Set the wine tanks with their capacity, quantity and variety
-        // Wine Tanks are initialy full tanks
+        // Wine Tanks are initially full tanks
         public static void SetTanks(int number, int capacity, string variety = "", double ratio = 1, bool debug = false)
         {
-            //need to be converted to array
+            // Need to be converted to array
             double[] ratioArr = Enumerable.Repeat(0.0, Formula.ratios.Length + 1).ToArray();
 
             ratioArr[0] = ratio;
