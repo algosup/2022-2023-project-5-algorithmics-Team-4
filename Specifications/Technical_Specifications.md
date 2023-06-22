@@ -43,13 +43,13 @@ Files can be created in Exel and be exported to CSV.
 
 Tanks.csv (identifier in between ** are not present in the actual input but are here fro readablility)
 ```
-100, '' *A*
-20, 'water' *B*
-200, 'water' *C*
-15, 'grenadine' *D*
-120, '' *E*
-80, '' *F*
-5, 'grenadine' *G*
+100, '' *1*
+20, 'water' *2*
+200, 'water' *3*
+15, 'grenadine' *4*
+120, '' *5*
+80, '' *6*
+5, 'grenadine' *7*
 ```
 Formula.csv
 ```
@@ -63,9 +63,9 @@ The output will be writen in the console. It will write the steps taken to achiv
 *example :*<br>
 
 ```
-C to E, F
-F, D, G to A
-Target formula in A
+3 to 5, 6
+6, 4, 7 to 1
+Target formula in 1
 ```
 
 ### Assumptions
