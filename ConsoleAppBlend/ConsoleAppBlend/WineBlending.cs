@@ -89,14 +89,18 @@ namespace ConsoleAppBlend
         }
 
         // New blend method
-        public static void Blend()
+        public static void Blend(string path)
         {
+            StreamWriter sw = File.AppendText(path);
+
             while (BestAccuracy > 0.1)
             {
                 var best = FindBestPosibility();
-                PrintInstruction(best.Item1, best.Item2);
+                PrintInstruction(best.Item1, best.Item2, sw);
                 Tanks = Transfer.Trasfer(best.Item1, best.Item2, Tanks);
             }
+
+            sw.Close();
         }
 
         private static (Tank[], Tank) FindBestPosibility(bool debugPosiblity = false, bool debugConsider = false)
@@ -112,9 +116,9 @@ namespace ConsoleAppBlend
                 Acuracy[i] = ConsiderResult.Consider(posiblities.Item1[i], Formula);
             }
 
-            var BestSource = posiblities.Item1[Array.IndexOf(Acuracy, Acuracy.Max())];
-            var BestTarget = posiblities.Item2[Array.IndexOf(Acuracy, Acuracy.Max())];
-            BestAccuracy = Acuracy.Max();
+            var BestSource = posiblities.Item1[Array.IndexOf(Acuracy, Acuracy.Min())];
+            var BestTarget = posiblities.Item2[Array.IndexOf(Acuracy, Acuracy.Min())];
+            BestAccuracy = Acuracy.Min();
 
             if (debugPosiblity)
             {
@@ -132,11 +136,14 @@ namespace ConsoleAppBlend
             return (BestSource, BestTarget);
         }
 
-        private static void PrintInstruction(Tank[] source, Tank target)
+        private static void PrintInstruction(Tank[] source, Tank target, StreamWriter sw)
         {
+                
             foreach (Tank tank in source)
             {
-                Console.WriteLine($"Transfere from tank N°{tank.id} to tank N°{target.id}");
+                string str = $"Transfere from tank N°{tank.id} to tank N°{target.id}";
+                Console.WriteLine(str);
+                sw.WriteLine(str);
             }
         }
     }

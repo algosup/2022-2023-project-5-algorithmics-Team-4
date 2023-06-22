@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
 
 namespace ConsoleAppBlend
@@ -8,18 +9,20 @@ namespace ConsoleAppBlend
     {
         static void Main(string[] args)
         {
-            
-
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.Green;
 
+            EraseOutput(@"../../../../../output.txt");
+
             //Declare the Formula before the tanks
-            ReadCSV.ReadFormula(@"../../formula.csv");
+            ReadCSV.ReadFormula(@"../../../../../formula.csv");
 
             //Declare the tanks (number, size, wine type)
-            ReadCSV.ReadTanks(@"../../tank.csv");
+            ReadCSV.ReadTanks(@"../../../../../tank.csv");
 
-            MeasureExecutionTime(() => WineBlending.Blend());
+            MeasureExecutionTime(() => WineBlending.Blend(@"../../../../../output.txt"));
+
+            Console.ReadLine();
         }
 
         static void MeasureExecutionTime(Action action)
@@ -30,6 +33,11 @@ namespace ConsoleAppBlend
             stopwatch.Stop();
             Console.WriteLine("Execution time: " + stopwatch.ElapsedMilliseconds + " ms");
             Console.WriteLine();
+        }
+
+        static void EraseOutput(string path)
+        {
+            File.Delete(path);
         }
     }
 }
