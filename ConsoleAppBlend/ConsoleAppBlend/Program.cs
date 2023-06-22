@@ -8,16 +8,18 @@ namespace ConsoleAppBlend
     {
         static void Main(string[] args)
         {
-            string[] varieties = { "A", "B" };
-            double[] ratios = { 0.8, 0.2 };
-
-            MeasureExecutionTime(() => WineBlending.SetFormula(varieties, ratios));
-
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.Green;
-            MeasureExecutionTime(() => WineBlending.SetTanks(1, 100, debug: true));
-            MeasureExecutionTime(() => WineBlending.SetTanks(1, 80, "A", debug:true));
-            MeasureExecutionTime(() => WineBlending.SetTanks(1, 20, "B"));
+
+            //Declare the Formula before the tanks
+            string[] varieties = { "A", "B" };
+            double[] ratios = { 0.8, 0.4 };
+            WineBlending.SetFormula(varieties, ratios);
+
+            //Declare the tanks (number, size, wine type)
+            WineBlending.SetTanks(1, 100);
+            WineBlending.SetTanks(1, 80, "A");
+            WineBlending.SetTanks(1, 20, "B");
 
             MeasureExecutionTime(() => WineBlending.Blend());
         }

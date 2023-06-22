@@ -9,9 +9,10 @@ namespace ConsoleAppBlend
     public static class Posibility
     {
         // Find all the posible combinason of transferes
-        public static List<Tank[]> BuildPoibility(List<Tank> Tanks)
+        public static (List<Tank[]>, List<Tank>) BuildPoibility(List<Tank> Tanks)
         {
             List<Tank[]> PoibilityList = new List<Tank[]>();
+            List<Tank> PoibilityListTarget = new List<Tank>();
             var full = GetFullTanks(Tanks);
 
             Tank[] tankArr = full.ToArray();
@@ -26,12 +27,13 @@ namespace ConsoleAppBlend
                         if (!PoibilityList.Contains(arr))
                         {
                             PoibilityList.Add(arr);
+                            PoibilityListTarget.Add(tank);
                         }
                     }
                 }
             }
 
-            return PoibilityList;
+            return (PoibilityList, PoibilityListTarget);
         }
 
         private static List<Tank> GetFullTanks (List<Tank> Tanks) {
@@ -70,7 +72,7 @@ namespace ConsoleAppBlend
             {
                 return;
             }
-            if (i == candidates.Length)
+            if (i == candidates.Length || i > 5)
             {
                 return;
             }

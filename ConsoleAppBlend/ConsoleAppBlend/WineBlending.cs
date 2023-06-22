@@ -31,6 +31,7 @@ namespace ConsoleAppBlend
         // Blending are initialy empty tanks
         static List<Tank> Tanks = new List<Tank>();
         static FormulaClass Formula = new FormulaClass();
+        static Double BestAccuracy = 1;
 
         // Set the wine tanks with their capacity, quantity and variety
         // Wine Tanks are initialy full tanks
@@ -90,17 +91,53 @@ namespace ConsoleAppBlend
         // New blend method
         public static void Blend()
         {
-            var posiblity = Posibility.BuildPoibility(Tanks);
-
-            foreach (var posibility in posiblity)
+            while (BestAccuracy > 0.1)
             {
-                foreach (var a in posibility)
-                {
-                    Console.Write(a.id);
-                }
-                Console.WriteLine();
+                var best = FindBestPosibility();
+                PrintInstruction(best.Item1, best.Item2);
+                Tanks = Transfer.Trasfer(best.Item1, best.Item2, Tanks);
             }
-            Console.ReadLine();
+        }
+
+        private static (Tank[], Tank) FindBestPosibility(bool debugPosiblity = false, bool debugConsider = false)
+        {
+            var posiblities = Posibility.BuildPoibility(Tanks);
+            if (posiblities.Item1.Count == 0)
+                throw new Exception("no posible combinasion could be found");
+
+            double[] Acuracy = new double[posiblities.Item1.Count];
+
+            for (int i = 0; i < Acuracy.Length; i++)
+            {
+                Acuracy[i] = ConsiderResult.Consider(posiblities.Item1[i], Formula);
+            }
+
+            var BestSource = posiblities.Item1[Array.IndexOf(Acuracy, Acuracy.Max())];
+            var BestTarget = posiblities.Item2[Array.IndexOf(Acuracy, Acuracy.Max())];
+            BestAccuracy = Acuracy.Max();
+
+            if (debugPosiblity)
+            {
+                foreach (var posibility in posiblities.Item1)
+                {
+                    foreach (var a in posibility)
+                    {
+                        Console.Write(a.id + " ");
+                    }
+                    Console.WriteLine();
+                }
+                Console.ReadLine();
+            }
+
+            return (BestSource, BestTarget);
+        }
+
+        private static void PrintInstruction(Tank[] source, Tank target)
+        {
+            foreach (Tank tank in source)
+            {
+                Console.WriteLine($"Transfere from tank N°{tank.id} to tank N°{target.id}");
+            }
         }
     }
 }
