@@ -8,18 +8,16 @@ namespace ConsoleAppBlend
     {
         static void Main(string[] args)
         {
+            
+
             Console.BackgroundColor = ConsoleColor.Black;
             Console.ForegroundColor = ConsoleColor.Green;
 
             //Declare the Formula before the tanks
-            string[] varieties = { "A", "B" };
-            double[] ratios = { 0.8, 0.4 };
-            WineBlending.SetFormula(varieties, ratios);
+            ReadCSV.ReadFormula(@"../../../../../formula.csv");
 
             //Declare the tanks (number, size, wine type)
-            WineBlending.SetTanks(1, 100);
-            WineBlending.SetTanks(1, 80, "A");
-            WineBlending.SetTanks(1, 20, "B");
+            ReadCSV.ReadTanks(@"../../../../../tank.csv");
 
             MeasureExecutionTime(() => WineBlending.Blend());
         }
