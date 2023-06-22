@@ -14,10 +14,10 @@ namespace ConsoleAppBlend
             Console.ForegroundColor = ConsoleColor.Green;
 
             //Declare the Formula before the tanks
-            ReadCSV.ReadFormula(@"../../../../../formula.csv");
+            ReadCSV.ReadFormula(@"../../formula.csv");
 
             //Declare the tanks (number, size, wine type)
-            ReadCSV.ReadTanks(@"../../../../../tank.csv");
+            ReadCSV.ReadTanks(@"../../tank.csv");
 
             MeasureExecutionTime(() => WineBlending.Blend());
         }
