@@ -11,6 +11,8 @@ namespace ConsoleAppBlend
     {
         public static void ReadFormula(string path)
         {
+            // V = Variety
+            // R = Ratio
             List<string> V = new List<string>();
             List<double> R = new List<double>();
 
@@ -24,6 +26,11 @@ namespace ConsoleAppBlend
                     string[] fields = parser.ReadFields();
                     R.Add(double.Parse(fields[0]));
                     V.Add(fields[1]);
+                }
+
+                if (R.Sum() != 1)
+                {
+                    throw new Exception("Sum of ratios must be 1");
                 }
             }
 
